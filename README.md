@@ -16,7 +16,8 @@ source ~/.profile
 COMMAND SEQUENCE FOR DISPLAYING
 
 Set up XServer-> multi windows, disable checking (makes you vulnerable exit after session)
-(If on desktop, try "open large window"
+(If on desktop, try "open large window")
+
 export LIBGL_ALWAYS_INDIRECT=0;
 export DISPLAY=localhost:0
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
